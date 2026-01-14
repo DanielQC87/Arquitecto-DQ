@@ -11,7 +11,7 @@ export interface Project {
 export interface Client {
   id: string;
   name: string;
-  logoUrl: string; // Using placeholder images for logos
+  logoUrl: string;
   testimonial?: string;
 }
 

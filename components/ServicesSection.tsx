@@ -103,10 +103,10 @@ export const ServicesSection: React.FC = () => {
           ></div>
 
           {/* Modal Content */}
-          <div className="relative bg-white w-full max-w-4xl shadow-2xl overflow-hidden animate-fade-in-up">
+          <div className="relative bg-white w-full max-w-4xl shadow-2xl overflow-hidden fade-in-up">
             <div className="grid grid-cols-1 md:grid-cols-5">
               
-              {/* Decorative Side (optional or solid color) */}
+              {/* Decorative Side */}
               <div className="hidden md:flex md:col-span-2 bg-arch-gray items-center justify-center p-12 border-r border-gray-100">
                 <div className="text-arch-accent opacity-80 scale-150 transform">
                   {activeService.icon}

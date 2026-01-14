@@ -57,7 +57,7 @@ export const ContactSection: React.FC = () => {
                 <input 
                   type="text" 
                   id="name" 
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all placeholder-white/20"
+                  className="w-full rounded-2xl py-4 px-6 text-white custom-input placeholder-white/20"
                   placeholder="Tu nombre"
                 />
               </div>
@@ -66,7 +66,7 @@ export const ContactSection: React.FC = () => {
                 <input 
                   type="email" 
                   id="email" 
-                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all placeholder-white/20"
+                  className="w-full rounded-2xl py-4 px-6 text-white custom-input placeholder-white/20"
                   placeholder="tu@email.com"
                 />
               </div>
@@ -74,7 +74,7 @@ export const ContactSection: React.FC = () => {
             <div className="space-y-3">
               <label htmlFor="interest" className="text-xs uppercase tracking-widest text-white/50 ml-2">Interés</label>
               <div className="relative">
-                <select id="interest" className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all appearance-none cursor-pointer">
+                <select id="interest" className="w-full rounded-2xl py-4 px-6 text-white custom-input appearance-none cursor-pointer">
                     <option className="bg-gray-900 text-white">Diseño Residencial</option>
                     <option className="bg-gray-900 text-white">Diseño Comercial</option>
                     <option className="bg-gray-900 text-white">Interiorismo</option>
@@ -90,7 +90,7 @@ export const ContactSection: React.FC = () => {
               <textarea 
                 id="message" 
                 rows={4}
-                className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all placeholder-white/20 resize-none"
+                className="w-full rounded-2xl py-4 px-6 text-white custom-input placeholder-white/20 resize-none"
                 placeholder="Detalles del proyecto..."
               ></textarea>
             </div>

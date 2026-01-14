@@ -5,11 +5,9 @@ import { Quote } from 'lucide-react';
 export const ClientsSection: React.FC = () => {
   return (
     <section id="clients" className="py-32 relative overflow-hidden bg-white">
-       {/* Background - Light Liquid Style */}
+       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-         {/* Subtle background texture for depth */}
          <div className="absolute top-0 right-0 w-3/4 h-full bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2301&auto=format&fit=crop')] bg-cover bg-center opacity-5 grayscale"></div>
-         {/* Fade to white to ensure text readability */}
          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40"></div>
       </div>
 
@@ -20,17 +18,16 @@ export const ClientsSection: React.FC = () => {
              <h2 className="text-4xl md:text-5xl font-serif text-arch-dark">Nuestros Aliados</h2>
            </div>
            <p className="text-gray-500 max-w-md text-left md:text-right mt-6 md:mt-0 font-light leading-relaxed">
-             Colaboramos con visionarios que entienden el valor del diseño excepcional y la arquitectura atemporal.
+             Colaboramos con visionarios que entienden el valor del diseño excepcional.
            </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Logos Grid - Light Glass Blocks */}
+             {/* Logos Grid */}
              <div className="grid grid-cols-2 gap-6">
               {CLIENTS.map((client) => (
-                  <div key={`logo-${client.id}`} className="bg-white/60 backdrop-blur-sm border border-gray-100 h-40 flex items-center justify-center p-6 rounded-2xl hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group cursor-default">
+                  <div key={`logo-${client.id}`} className="glass-panel-light h-40 flex items-center justify-center p-6 rounded-2xl cursor-default group">
                       <div className="text-center">
-                        {/* Placeholder for logo - utilizing typography as logo for minimalism */}
                         <span className="font-serif text-xl md:text-2xl text-gray-400 group-hover:text-arch-dark transition-colors duration-300 block">
                             {client.name.split(' ')[0]}
                         </span>
@@ -42,7 +39,7 @@ export const ClientsSection: React.FC = () => {
               ))}
              </div>
 
-             {/* Testimonial - Large Light Glass Card */}
+             {/* Testimonial */}
              <div className="bg-white/80 backdrop-blur-xl border border-gray-100 p-10 md:p-14 rounded-[3rem] relative mt-10 lg:mt-0 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]">
                 <div className="absolute -top-6 -right-6 text-gray-100 select-none">
                     <Quote size={120} />
