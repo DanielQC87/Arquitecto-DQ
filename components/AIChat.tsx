@@ -44,7 +44,7 @@ export const AIChat: React.FC = () => {
     <>
       <button 
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-8 right-8 z-40 bg-black text-white p-4 shadow-lg hover:bg-[#c5a059] transition-colors duration-300 rounded-none ${isOpen ? 'hidden' : 'flex'}`}
+        className={`fixed bottom-8 right-8 z-40 bg-black text-white p-4 shadow-lg hover:bg-arch-accent transition-colors duration-300 rounded-none ${isOpen ? 'hidden' : 'flex'}`}
         aria-label="Abrir chat"
       >
         <MessageSquare size={20} />
@@ -59,7 +59,7 @@ export const AIChat: React.FC = () => {
         {/* Header */}
         <div className="bg-white p-4 flex justify-between items-center border-b border-gray-100">
           <div>
-            <span className="font-serif font-bold text-[#111111] block text-sm">AI Architect</span>
+            <span className="font-serif font-bold text-arch-dark block text-sm">AI Architect</span>
           </div>
           <button onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-black transition-colors">
             <Minus size={18} />
@@ -103,7 +103,7 @@ export const AIChat: React.FC = () => {
             <button 
               onClick={handleSend}
               disabled={isLoading || !input.trim()}
-              className="text-black hover:text-[#c5a059] disabled:opacity-30 transition-colors"
+              className="text-black hover:text-arch-accent disabled:opacity-30 transition-colors"
             >
               <Send size={16} />
             </button>

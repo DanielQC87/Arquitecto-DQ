@@ -3,7 +3,7 @@ import { ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen w-full flex items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -16,17 +16,17 @@ export const Hero: React.FC = () => {
 
       {/* Minimalist Content */}
       <div className="relative z-10 px-6 max-w-5xl mx-auto text-center">
-        <h2 className="text-white/80 text-xs tracking-[0.4em] uppercase mb-6 fade-in-up">
+        <h2 className="text-white/80 text-xs tracking-[0.4em] uppercase mb-6 animate-fade-in-up">
           DQ Visualization
         </h2>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-none mb-8 fade-in-up delay-100">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-none mb-8 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           Arquitectura
         </h1>
-        <p className="text-white/80 text-lg md:text-xl font-light max-w-xl mx-auto mb-12 fade-in-up delay-200">
+        <p className="text-white/80 text-lg md:text-xl font-light max-w-xl mx-auto mb-12 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           Donde la estructura se encuentra con la transparencia. Espacios diseñados para fluir.
         </p>
         
-        <div className="fade-in-up delay-300">
+        <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <a 
             href="#projects"
             className="inline-block border border-white px-10 py-4 text-xs font-bold tracking-[0.2em] text-white hover:bg-white hover:text-black transition-all duration-300"

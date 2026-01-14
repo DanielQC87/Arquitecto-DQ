@@ -5,15 +5,15 @@ export const ContactSection: React.FC = () => {
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
       {/* Dark Glass Background Concept */}
-      <div className="absolute inset-0 bg-[#111111]">
+      <div className="absolute inset-0 bg-arch-dark">
          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
-         <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/90 to-[#111111]/80"></div>
+         <div className="absolute inset-0 bg-gradient-to-t from-arch-dark via-arch-dark/90 to-arch-dark/80"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10 text-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <h3 className="text-[#c5a059] text-xs tracking-[0.3em] uppercase mb-4 font-bold">Contacto</h3>
+            <h3 className="text-arch-accent text-xs tracking-[0.3em] uppercase mb-4 font-bold">Contacto</h3>
             <h2 className="text-5xl md:text-6xl font-serif mb-8">Creemos algo <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50">Atmosférico</span></h2>
             <p className="text-white/60 font-light text-lg mb-12 max-w-md leading-relaxed">
               La arquitectura comienza con una conversación. Cuéntanos tu visión y nosotros le daremos forma y materialidad.
@@ -21,7 +21,7 @@ export const ContactSection: React.FC = () => {
 
             <div className="space-y-8">
               <div className="flex items-center space-x-6 group">
-                <div className="w-14 h-14 glass-panel-dark flex items-center justify-center rounded-2xl text-[#c5a059] group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 glass-panel-dark flex items-center justify-center rounded-2xl text-arch-accent group-hover:scale-110 transition-transform duration-300">
                   <Mail size={20} />
                 </div>
                 <div>
@@ -30,7 +30,7 @@ export const ContactSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-6 group">
-                <div className="w-14 h-14 glass-panel-dark flex items-center justify-center rounded-2xl text-[#c5a059] group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 glass-panel-dark flex items-center justify-center rounded-2xl text-arch-accent group-hover:scale-110 transition-transform duration-300">
                   <Phone size={20} />
                 </div>
                 <div>
@@ -39,7 +39,7 @@ export const ContactSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-6 group">
-                <div className="w-14 h-14 glass-panel-dark flex items-center justify-center rounded-2xl text-[#c5a059] group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 glass-panel-dark flex items-center justify-center rounded-2xl text-arch-accent group-hover:scale-110 transition-transform duration-300">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -57,7 +57,7 @@ export const ContactSection: React.FC = () => {
                 <input 
                   type="text" 
                   id="name" 
-                  className="w-full rounded-2xl py-4 px-6 text-white custom-input placeholder-white/20"
+                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all placeholder-white/20"
                   placeholder="Tu nombre"
                 />
               </div>
@@ -66,7 +66,7 @@ export const ContactSection: React.FC = () => {
                 <input 
                   type="email" 
                   id="email" 
-                  className="w-full rounded-2xl py-4 px-6 text-white custom-input placeholder-white/20"
+                  className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all placeholder-white/20"
                   placeholder="tu@email.com"
                 />
               </div>
@@ -74,7 +74,7 @@ export const ContactSection: React.FC = () => {
             <div className="space-y-3">
               <label htmlFor="interest" className="text-xs uppercase tracking-widest text-white/50 ml-2">Interés</label>
               <div className="relative">
-                <select id="interest" className="w-full rounded-2xl py-4 px-6 text-white custom-input appearance-none cursor-pointer">
+                <select id="interest" className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all appearance-none cursor-pointer">
                     <option className="bg-gray-900 text-white">Diseño Residencial</option>
                     <option className="bg-gray-900 text-white">Diseño Comercial</option>
                     <option className="bg-gray-900 text-white">Interiorismo</option>
@@ -90,13 +90,13 @@ export const ContactSection: React.FC = () => {
               <textarea 
                 id="message" 
                 rows={4}
-                className="w-full rounded-2xl py-4 px-6 text-white custom-input placeholder-white/20 resize-none"
+                className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:bg-white/10 focus:border-arch-accent transition-all placeholder-white/20 resize-none"
                 placeholder="Detalles del proyecto..."
               ></textarea>
             </div>
             <button 
               type="submit"
-              className="w-full bg-white text-[#111111] py-4 rounded-2xl text-xs font-bold tracking-[0.2em] hover:bg-[#c5a059] hover:text-white transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg shadow-white/10"
+              className="w-full bg-white text-arch-dark py-4 rounded-2xl text-xs font-bold tracking-[0.2em] hover:bg-arch-accent hover:text-white transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg shadow-white/10"
             >
               <span>ENVIAR MENSAJE</span>
               <ArrowRight size={16} />

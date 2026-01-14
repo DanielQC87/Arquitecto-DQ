@@ -11,7 +11,7 @@ import { AIChat } from './components/AIChat';
 
 const App: React.FC = () => {
   return (
-    <div className="font-sans antialiased text-[#111111] bg-white selection:bg-[#c5a059] selection:text-white">
+    <div className="font-sans antialiased text-arch-dark bg-white selection:bg-arch-accent selection:text-white">
       <Navbar />
       <main>
         <Hero />

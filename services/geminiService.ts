@@ -12,7 +12,7 @@ Información clave del estudio:
 - Proyectos destacados: ${PROJECTS.map(p => p.title + " (" + p.category + ")").join(", ")}.
 
 Si te preguntan por precios, invita amablemente al usuario a la sección de contacto para una cotización personalizada.
-Responde siempre en español de manera concisa.
+Responde siempre en español de manera concisa (máximo 3 oraciones por respuesta a menos que se pida detalle).
 `;
 
 export const sendMessageToGemini = async (history: { role: 'user' | 'model'; parts: { text: string }[] }[], message: string): Promise<string> => {
@@ -24,6 +24,7 @@ export const sendMessageToGemini = async (history: { role: 'user' | 'model'; par
 
     const ai = new GoogleGenAI({ apiKey });
     
+    // Using gemini-3-flash-preview for quick, intelligent text responses
     const chat = ai.chats.create({
       model: 'gemini-3-flash-preview',
       config: {

@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <a href="#home" className={`text-xl font-serif font-bold tracking-tight z-50 transition-colors ${scrolled || isOpen ? 'text-[#111111]' : 'text-white'}`}>
+          <a href="#home" className={`text-xl font-serif font-bold tracking-tight z-50 transition-colors ${scrolled || isOpen ? 'text-arch-dark' : 'text-white'}`}>
             DQ Visualization
           </a>
 
@@ -34,8 +34,8 @@ export const Navbar: React.FC = () => {
               <a 
                 key={link.label}
                 href={link.href}
-                className={`text-xs font-medium tracking-widest hover:text-[#c5a059] transition-colors ${
-                  scrolled ? 'text-[#111111]' : 'text-white'
+                className={`text-xs font-medium tracking-widest hover:text-arch-accent transition-colors ${
+                  scrolled ? 'text-arch-dark' : 'text-white'
                 }`}
               >
                 {link.label.toUpperCase()}
@@ -48,7 +48,7 @@ export const Navbar: React.FC = () => {
             className="md:hidden z-50 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={24} className="text-[#111111]" /> : <Menu size={24} className={scrolled ? 'text-[#111111]' : 'text-white'} />}
+            {isOpen ? <X size={24} className="text-arch-dark" /> : <Menu size={24} className={scrolled ? 'text-arch-dark' : 'text-white'} />}
           </button>
         </div>
       </nav>
@@ -59,7 +59,7 @@ export const Navbar: React.FC = () => {
           <a 
             key={link.label}
             href={link.href}
-            className="text-[#111111] text-2xl font-serif hover:text-[#c5a059] transition-colors"
+            className="text-arch-dark text-2xl font-serif hover:text-arch-accent transition-colors"
             onClick={() => setIsOpen(false)}
           >
             {link.label}
