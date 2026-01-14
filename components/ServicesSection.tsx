@@ -56,7 +56,7 @@ export const ServicesSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="mb-20">
             <h3 className="text-gray-400 text-xs tracking-[0.3em] uppercase mb-4">Especialización</h3>
-            <h2 className="text-4xl md:text-5xl font-serif text-arch-dark leading-tight max-w-2xl">
+            <h2 className="text-4xl md:text-5xl font-serif text-[#111111] leading-tight max-w-2xl">
               Enfoque multidisciplinario para espacios complejos.
             </h2>
         </div>
@@ -72,11 +72,11 @@ export const ServicesSection: React.FC = () => {
                 0{index + 1}
               </div>
               
-              <div className="mb-8 text-gray-400 group-hover:text-arch-accent transition-colors duration-300">
+              <div className="mb-8 text-gray-400 group-hover:text-[#c5a059] transition-colors duration-300">
                 {service.icon}
               </div>
               
-              <h3 className="text-2xl font-serif text-arch-dark mb-4 group-hover:translate-x-2 transition-transform duration-300">
+              <h3 className="text-2xl font-serif text-[#111111] mb-4 group-hover:translate-x-2 transition-transform duration-300">
                 {service.title}
               </h3>
               
@@ -84,7 +84,7 @@ export const ServicesSection: React.FC = () => {
                 {service.description}
               </p>
 
-              <div className="flex items-center text-[10px] font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0 text-arch-dark">
+              <div className="flex items-center text-[10px] font-bold tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0 text-[#111111]">
                 <span className="mr-2">Detalles</span>
                 <ArrowRight size={14} />
               </div>
@@ -107,8 +107,8 @@ export const ServicesSection: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-5">
               
               {/* Decorative Side */}
-              <div className="hidden md:flex md:col-span-2 bg-arch-gray items-center justify-center p-12 border-r border-gray-100">
-                <div className="text-arch-accent opacity-80 scale-150 transform">
+              <div className="hidden md:flex md:col-span-2 bg-[#f9f9f9] items-center justify-center p-12 border-r border-gray-100">
+                <div className="text-[#c5a059] opacity-80 scale-150 transform">
                   {activeService.icon}
                 </div>
               </div>
@@ -122,11 +122,11 @@ export const ServicesSection: React.FC = () => {
                   <X size={24} />
                 </button>
 
-                <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-arch-accent mb-4">
+                <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-[#c5a059] mb-4">
                   Servicio 0{activeService.id}
                 </h4>
                 
-                <h3 className="text-3xl md:text-4xl font-serif text-arch-dark mb-6">
+                <h3 className="text-3xl md:text-4xl font-serif text-[#111111] mb-6">
                   {activeService.title}
                 </h3>
                 
@@ -135,13 +135,13 @@ export const ServicesSection: React.FC = () => {
                 </p>
 
                 <div className="space-y-4">
-                  <h5 className="text-xs font-bold uppercase tracking-widest text-arch-dark mb-4 border-b border-gray-100 pb-2">
+                  <h5 className="text-xs font-bold uppercase tracking-widest text-[#111111] mb-4 border-b border-gray-100 pb-2">
                     Capacidades
                   </h5>
                   <ul className="grid grid-cols-1 gap-3">
                     {activeService.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-sm text-gray-500">
-                        <CheckCircle2 size={16} className="text-arch-accent mr-3 flex-shrink-0" strokeWidth={1.5} />
+                        <CheckCircle2 size={16} className="text-[#c5a059] mr-3 flex-shrink-0" strokeWidth={1.5} />
                         {feature}
                       </li>
                     ))}
@@ -151,7 +151,7 @@ export const ServicesSection: React.FC = () => {
                 <div className="mt-12 pt-6 border-t border-gray-100 flex justify-end">
                    <button 
                       onClick={() => setActiveServiceId(null)}
-                      className="text-xs font-bold tracking-widest uppercase text-arch-dark hover:text-arch-accent transition-colors"
+                      className="text-xs font-bold tracking-widest uppercase text-[#111111] hover:text-[#c5a059] transition-colors"
                    >
                      Cerrar
                    </button>

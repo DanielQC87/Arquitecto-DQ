@@ -8,6 +8,12 @@
   --ease-luxury: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+/* Forzar Playfair Display cuando se usa la clase font-serif, 
+   ya que eliminamos la configuración JS de Tailwind */
+.font-serif {
+  font-family: 'Playfair Display', serif !important;
+}
+
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 

@@ -15,7 +15,7 @@ export const ClientsSection: React.FC = () => {
         <div className="flex flex-col md:flex-row items-end justify-between mb-20">
            <div>
              <h3 className="text-gray-400 text-xs tracking-[0.3em] uppercase mb-4 font-bold">Confianza</h3>
-             <h2 className="text-4xl md:text-5xl font-serif text-arch-dark">Nuestros Aliados</h2>
+             <h2 className="text-4xl md:text-5xl font-serif text-[#111111]">Nuestros Aliados</h2>
            </div>
            <p className="text-gray-500 max-w-md text-left md:text-right mt-6 md:mt-0 font-light leading-relaxed">
              Colaboramos con visionarios que entienden el valor del diseño excepcional.
@@ -28,10 +28,10 @@ export const ClientsSection: React.FC = () => {
               {CLIENTS.map((client) => (
                   <div key={`logo-${client.id}`} className="glass-panel-light h-40 flex items-center justify-center p-6 rounded-2xl cursor-default group">
                       <div className="text-center">
-                        <span className="font-serif text-xl md:text-2xl text-gray-400 group-hover:text-arch-dark transition-colors duration-300 block">
+                        <span className="font-serif text-xl md:text-2xl text-gray-400 group-hover:text-[#111111] transition-colors duration-300 block">
                             {client.name.split(' ')[0]}
                         </span>
-                        <span className="text-[10px] uppercase tracking-widest text-arch-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2 block">
+                        <span className="text-[10px] uppercase tracking-widest text-[#c5a059] opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2 block">
                            Partner
                         </span>
                       </div>
@@ -45,9 +45,9 @@ export const ClientsSection: React.FC = () => {
                     <Quote size={120} />
                 </div>
                 
-                <Quote className="text-arch-accent w-8 h-8 mb-8 relative z-10" />
+                <Quote className="text-[#c5a059] w-8 h-8 mb-8 relative z-10" />
                 
-                <p className="text-2xl md:text-3xl font-serif italic text-arch-dark mb-10 leading-relaxed relative z-10">
+                <p className="text-2xl md:text-3xl font-serif italic text-[#111111] mb-10 leading-relaxed relative z-10">
                   "{CLIENTS[0].testimonial}"
                 </p>
                 
@@ -58,7 +58,7 @@ export const ClientsSection: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                         <p className="text-sm font-bold text-arch-dark tracking-wider uppercase">
+                         <p className="text-sm font-bold text-[#111111] tracking-wider uppercase">
                           {CLIENTS[0].name}
                         </p>
                         <p className="text-[10px] text-gray-400 uppercase tracking-widest mt-0.5">

@@ -14,27 +14,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <script>
-      // Polyfill simple para evitar errores de process.env en navegador
-      window.process = window.process || { env: { NODE_ENV: 'production' } };
-
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-            colors: {
-              'arch-dark': '#111111',
-              'arch-gray': '#f9f9f9',
-              'arch-accent': '#c5a059',
-            },
-          }
-        }
-      }
-    </script>
-
     <!-- Import Map: React 19 RC -->
     <script type="importmap">
 {
@@ -50,7 +29,7 @@
 }
 </script>
   </head>
-  <body class="bg-white text-arch-dark antialiased selection:bg-black selection:text-white">
+  <body class="bg-white text-[#111111] antialiased selection:bg-black selection:text-white">
     <div id="root"></div>
   </body>
 </html>

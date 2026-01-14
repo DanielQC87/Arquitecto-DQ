@@ -10,9 +10,9 @@ export const ProjectsSection: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 border-b border-gray-100 pb-8">
           <div>
             <h3 className="text-gray-400 text-xs tracking-[0.3em] uppercase mb-4">Portafolio</h3>
-            <h2 className="text-4xl md:text-5xl font-serif text-arch-dark">Obras Recientes</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#111111]">Obras Recientes</h2>
           </div>
-          <a href="#" className="hidden md:flex items-center text-arch-dark hover:text-arch-accent transition-colors mt-6 md:mt-0 group text-xs font-bold tracking-widest uppercase">
+          <a href="#" className="hidden md:flex items-center text-[#111111] hover:text-[#c5a059] transition-colors mt-6 md:mt-0 group text-xs font-bold tracking-widest uppercase">
             <span className="mr-2">Ver archivo completo</span>
             <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
           </a>
